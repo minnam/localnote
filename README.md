@@ -1,5 +1,5 @@
 # localnote
-A simple and !!unsecure!! web-socket based wysiwyg editor for your dev workflow.
+A simple and **unsecure** web-socket based wysiwyg editor for your dev workflow.
 
 Handy when you need to transfer text/images between devices on the same network.
 
