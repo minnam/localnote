@@ -3,14 +3,19 @@ const express = require('express')
 const app = express()
 const http = require('http')
 const server = http.createServer(app)
-const io = require('socket.io')(server)
 const args = require('minimist')(process.argv.slice(2));
 
 
 const DEFAULT_ARGS = {
   p: 8888,
+  port: 8888,
+  buffer: 1e8, // 100mb
   ...args
 }
+
+const io = require('socket.io')(server, {
+  maxHttpBufferSize: 1e8
+})
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');

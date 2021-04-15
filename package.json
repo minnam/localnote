@@ -1,6 +1,6 @@
 {
   "name": "localnote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A websocket app to share rich text over network",
   "main": "index.js",
   "scripts": {
