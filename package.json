@@ -1,0 +1,28 @@
+{
+  "name": "localnote",
+  "version": "1.0.0",
+  "description": "A websocket app to share rich text over network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minnam/localnote.git"
+  },
+  "author": "Min Nam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minnam/localnote/issues"
+  },
+  "homepage": "https://github.com/minnam/localnote#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "minimist": "^1.2.5",
+    "socket.io": "^4.0.1"
+  },
+  "bin": {
+    "localnote": "./index.js"
+  }
+}
