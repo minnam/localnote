@@ -25,5 +25,10 @@
   "bin": {
     "localnote": "./index.js"
   },
-  "keywords": ["wysiwyg", "real-time chat", "chat", "web-socket"]
+  "keywords": [
+    "wysiwyg",
+    "real-time chat",
+    "chat",
+    "web-socket"
+  ]
 }
