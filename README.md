@@ -3,7 +3,7 @@ A simple and !!unsecure!! web-socket based wysiwyg editor for your dev workflow.
 
 Handy when you need to transfer text/images between devices on the same network.
 
-![Screenshot]('./screenshot.png')
+![Screenshot](https://raw.githubusercontent.com/minnam/localnote/master/screenshot.png)
 
 # Getting Started
 Run on the default port, 8888
