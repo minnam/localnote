@@ -87,9 +87,19 @@
         background: #000;
       }
 
-      #messages { list-style-type: none; margin: 0; padding: 0; padding-bottom: 300px; }
-      #messages > li { padding: 0.5rem 1rem; }
-      #messages > li:nth-child(odd) { background: #efefef; }
+      #messages {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 300px;
+      }
+
+      #messages > li {
+        padding: 0.5rem 1rem;
+      }
+      #messages > li:nth-child(odd) {
+        background: #efefef;
+      }
 
       img {
         width: 100%;
@@ -117,24 +127,20 @@
         },
         placeholder: 'Shift + Enter to send...',
         theme: 'snow'
-      });
+      })
 
-      const socket = io();
-
-      const form = document.getElementById('form');
-      const input = document.getElementById('input');
+      const socket = io()
+      const form = document.getElementById('form')
+      const input = document.getElementById('input')
 
       function submit (content) {
-        // console.log(input.innerText)
-        // if (input.innerText.replace(/\s/g, '') || content) {
           console.log(content || document.getElementsByClassName('ql-editor')[0].innerHTML)
           socket.emit('msg', content || document.getElementsByClassName('ql-editor')[0].innerHTML);
           document.getElementsByClassName('ql-editor')[0].innerHTML = ''
-        // }
       }
 
       form.addEventListener('submit', function(e) {
-        e.preventDefault();
+        e.preventDefault()
         submit()
       });
 
@@ -160,7 +166,7 @@
           </div>
         </div>`
         messages.appendChild(item)
-        window.scrollTo(0, document.body.scrollHeight);
+        window.scrollTo(0, document.body.scrollHeight)
       });
     </script>
   </body>

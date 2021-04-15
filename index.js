@@ -30,5 +30,5 @@ io.on('connection', (socket) => {
 })
 
 server.listen(DEFAULT_ARGS.p, () => {
-  console.log(`listening on *:${DEFAULT_ARGS.p}`)
+  console.log(`localnote running on *:${DEFAULT_ARGS.p}`)
 })
